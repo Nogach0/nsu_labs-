@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.26)
-project(lab8_1 C)
+cmake_minimum_required(VERSION 3.5.1)
+project(lab8-1 C)
 
-set(CMAKE_C_STANDARD 99)
+set(SRC src/main.c src/graph.c)
 
-add_executable(lab8_1 main.c
-        graph.h
-        graph.c)
+add_executable(${PROJECT_NAME} ${SRC})
+
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../modules")
+include(common_lab)

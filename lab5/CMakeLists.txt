@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5.1)
-project(lab9 C)
+project(lab5 C)
 
-set(SRC src/main.c src/graph.c)
+set(SRC src/main.c src/queue.c src/tree.c src/code.c src/bit_stream.c src/compression.c)
 
 add_executable(${PROJECT_NAME} ${SRC})
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5.1)
-project(lab9 C)
+project(lab6-1 C)
 
-set(SRC src/main.c src/graph.c)
+set(SRC src/main.c src/RBTree.c)
 
 add_executable(${PROJECT_NAME} ${SRC})
 
